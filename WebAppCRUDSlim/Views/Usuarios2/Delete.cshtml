@@ -1,0 +1,56 @@
+﻿@model WebAppCRUDSlim.Models.TabUsuarios
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Borrar Usuario</h2>
+
+<h3>¿Estás seguro de eliminar el usuario?</h3>
+<div>
+    <h4>TabUsuarios</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NombreUsuario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NombreUsuario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.APaternoUsuario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.APaternoUsuario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AMaternoUsuario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AMaternoUsuario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CorreoElectronico)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CorreoElectronico)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Eliminar" class="btn btn-default" /> |
+            @Html.ActionLink("Regresar", "Index")
+        </div>
+    }
+</div>

@@ -1,0 +1,50 @@
+﻿@model WebAppCRUDSlim.Models.TabUsuarios
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Mostrar Usuario</h2>
+
+<div>
+    <h4>TabUsuarios</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NombreUsuario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NombreUsuario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.APaternoUsuario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.APaternoUsuario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AMaternoUsuario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AMaternoUsuario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CorreoElectronico)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CorreoElectronico)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Editar", "Edit", new { id = Model.IDUsuario }) |
+    @Html.ActionLink("Regresar", "Index")
+</p>

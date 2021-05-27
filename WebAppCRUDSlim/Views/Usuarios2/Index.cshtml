@@ -1,0 +1,51 @@
+﻿@model IEnumerable<WebAppCRUDSlim.Models.TabUsuarios>
+
+@{
+    ViewBag.Title = "Principal";
+}
+
+<h2>Lista de Usuarios</h2>
+
+<p>
+    @Html.ActionLink("Nuevo Usuario", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.NombreUsuario)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.APaternoUsuario)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AMaternoUsuario)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CorreoElectronico)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.NombreUsuario)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.APaternoUsuario)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AMaternoUsuario)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CorreoElectronico)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Edit", new { id=item.IDUsuario }) |
+            @Html.ActionLink("Mostrar", "Details", new { id=item.IDUsuario }) |
+            @Html.ActionLink("Eliminar", "Delete", new { id=item.IDUsuario })
+        </td>
+    </tr>
+}
+
+</table>

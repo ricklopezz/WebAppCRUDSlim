@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="FundacionSlimModelStoreContainer" CdmEntityContainer="FundacionSlimEntities">
+    <EntitySetMapping Name="TabUsuarios">
+      <EntityTypeMapping TypeName="FundacionSlimModel.TabUsuarios">
+        <MappingFragment StoreEntitySet="TabUsuarios">
+          <ScalarProperty Name="IDUsuario" ColumnName="IDUsuario" />
+          <ScalarProperty Name="NombreUsuario" ColumnName="NombreUsuario" />
+          <ScalarProperty Name="APaternoUsuario" ColumnName="APaternoUsuario" />
+          <ScalarProperty Name="AMaternoUsuario" ColumnName="AMaternoUsuario" />
+          <ScalarProperty Name="CorreoElectronico" ColumnName="CorreoElectronico" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
