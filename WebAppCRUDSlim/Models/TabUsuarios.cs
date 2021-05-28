@@ -22,11 +22,11 @@ namespace WebAppCRUDSlim.Models
         public string NombreUsuario { get; set; }
 
         [DisplayName("Apellido Paterno")]
-        [StringLength(20, ErrorMessage = "La longitud máxima es de 30 caracteres")]
+        [StringLength(20, ErrorMessage = "La longitud máxima es de 20 caracteres")]
         public string APaternoUsuario { get; set; }
 
         [DisplayName("Apellido Materno")]
-        [StringLength(20, ErrorMessage ="La longitud máxima es de 30 caracteres")]
+        [StringLength(20, ErrorMessage ="La longitud máxima es de 20 caracteres")]
         public string AMaternoUsuario { get; set; }
 
         [DisplayName("E-Mail")]
