@@ -15,14 +15,14 @@ namespace WebAppCRUDSlim.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Página de Exámen para Fundación Carlos Slim";
 
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Información";
 
             return View();
         }
